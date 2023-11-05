@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		725983562AF7E02F0086FAA3 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 725983552AF7E02F0086FAA3 /* ApolloSQLite */; };
 		725983582AF7E02F0086FAA3 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 725983572AF7E02F0086FAA3 /* ApolloTestSupport */; };
 		7259835A2AF7E02F0086FAA3 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 725983592AF7E02F0086FAA3 /* ApolloWebSocket */; };
+		725983612AF7E9D40086FAA3 /* MoviesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 725983602AF7E9D40086FAA3 /* MoviesAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		7259834A2AF7DF3F0086FAA3 /* NoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResult.swift; sourceTree = "<group>"; };
 		7259834C2AF7DF4D0086FAA3 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		7259834E2AF7DFD10086FAA3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7259835D2AF7E7AD0086FAA3 /* HelloWorld.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = HelloWorld.graphql; sourceTree = "<group>"; };
+		7259835E2AF7E9AB0086FAA3 /* schema.graphqls */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725983612AF7E9D40086FAA3 /* MoviesAPI in Frameworks */,
 				725983542AF7E02F0086FAA3 /* ApolloAPI in Frameworks */,
 				725983582AF7E02F0086FAA3 /* ApolloTestSupport in Frameworks */,
 				7259835A2AF7E02F0086FAA3 /* ApolloWebSocket in Frameworks */,
@@ -61,6 +65,7 @@
 		7259831D2AF7D1820086FAA3 = {
 			isa = PBXGroup;
 			children = (
+				7259835B2AF7E6A10086FAA3 /* GraphQL */,
 				725983282AF7D1820086FAA3 /* Movies */,
 				725983272AF7D1820086FAA3 /* Products */,
 			);
@@ -173,6 +178,15 @@
 			path = Loaders;
 			sourceTree = "<group>";
 		};
+		7259835B2AF7E6A10086FAA3 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				7259835E2AF7E9AB0086FAA3 /* schema.graphqls */,
+				7259835D2AF7E7AD0086FAA3 /* HelloWorld.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +209,7 @@
 				725983552AF7E02F0086FAA3 /* ApolloSQLite */,
 				725983572AF7E02F0086FAA3 /* ApolloTestSupport */,
 				725983592AF7E02F0086FAA3 /* ApolloWebSocket */,
+				725983602AF7E9D40086FAA3 /* MoviesAPI */,
 			);
 			productName = Movies;
 			productReference = 725983262AF7D1820086FAA3 /* Movies.app */;
@@ -226,6 +241,7 @@
 			mainGroup = 7259831D2AF7D1820086FAA3;
 			packageReferences = (
 				725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				7259835F2AF7E9D40086FAA3 /* XCLocalSwiftPackageReference "MoviesAPI" */,
 			);
 			productRefGroup = 725983272AF7D1820086FAA3 /* Products */;
 			projectDirPath = "";
@@ -471,6 +487,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		7259835F2AF7E9D40086FAA3 /* XCLocalSwiftPackageReference "MoviesAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MoviesAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -507,6 +530,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloWebSocket;
+		};
+		725983602AF7E9D40086FAA3 /* MoviesAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MoviesAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
