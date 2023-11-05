@@ -14,9 +14,9 @@ class MovieListViewModel: ObservableObject {
     @Published var movies: [MovieViewModel] = []
     @Published var errors: [String] = []
 
-    func getAllMovies() {
+    func getAllMovies(genre: GraphQLNullable<String>) {
 
-        Network.shared.apollo.fetch(query: GetAllMoviesQuery()) { [weak self] result in
+        Network.shared.apollo.fetch(query: GetAllMoviesQuery(genre: genre)) { [weak self] result in
 
             guard let self = self else {
                 return

@@ -27,6 +27,8 @@
 		725983612AF7E9D40086FAA3 /* MoviesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 725983602AF7E9D40086FAA3 /* MoviesAPI */; };
 		725983642AF8119F0086FAA3 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983632AF8119F0086FAA3 /* MovieListViewModel.swift */; };
 		725983662AF8141A0086FAA3 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983652AF8141A0086FAA3 /* Apollo.swift */; };
+		725983692AF839680086FAA3 /* GenreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983682AF839680086FAA3 /* GenreListViewModel.swift */; };
+		7259836B2AF844C30086FAA3 /* GenreSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259836A2AF844C30086FAA3 /* GenreSelection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		725983622AF7F9100086FAA3 /* GetAllMovies.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetAllMovies.graphql; sourceTree = "<group>"; };
 		725983632AF8119F0086FAA3 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		725983652AF8141A0086FAA3 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
+		725983672AF838270086FAA3 /* GetAllGenres.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetAllGenres.graphql; sourceTree = "<group>"; };
+		725983682AF839680086FAA3 /* GenreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListViewModel.swift; sourceTree = "<group>"; };
+		7259836A2AF844C30086FAA3 /* GenreSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				725983632AF8119F0086FAA3 /* MovieListViewModel.swift */,
+				725983682AF839680086FAA3 /* GenreListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 				725983482AF7DF300086FAA3 /* MovieList.swift */,
 				7259834A2AF7DF3F0086FAA3 /* NoResult.swift */,
 				7259834C2AF7DF4D0086FAA3 /* URLImage.swift */,
+				7259836A2AF844C30086FAA3 /* GenreSelection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 			children = (
 				7259835E2AF7E9AB0086FAA3 /* schema.graphqls */,
 				725983622AF7F9100086FAA3 /* GetAllMovies.graphql */,
+				725983672AF838270086FAA3 /* GetAllGenres.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725983692AF839680086FAA3 /* GenreListViewModel.swift in Sources */,
 				7259834F2AF7DFD10086FAA3 /* String+Extensions.swift in Sources */,
 				7259832C2AF7D1820086FAA3 /* MovieListView.swift in Sources */,
 				7259834D2AF7DF4D0086FAA3 /* URLImage.swift in Sources */,
@@ -286,6 +295,7 @@
 				7259834B2AF7DF3F0086FAA3 /* NoResult.swift in Sources */,
 				725983452AF7DE6E0086FAA3 /* AddMovieView.swift in Sources */,
 				725983662AF8141A0086FAA3 /* Apollo.swift in Sources */,
+				7259836B2AF844C30086FAA3 /* GenreSelection.swift in Sources */,
 				725983492AF7DF300086FAA3 /* MovieList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

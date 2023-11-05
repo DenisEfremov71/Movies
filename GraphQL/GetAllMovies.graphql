@@ -1,5 +1,7 @@
-query GetAllMovies {
-  movies {
+query GetAllMovies($genre: String) {
+  movies(filter: {
+    genre: $genre
+  }) {
     id
     title
     year

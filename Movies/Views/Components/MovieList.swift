@@ -60,8 +60,7 @@ struct MovieList: View {
         "genre": "Fiction",
         "poster": "https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
     ]
-    let objId: Set<ObjectIdentifier> = []
-    let dataDict = DataDict(data: data, fulfilledFragments: objId)
+    let dataDict = DataDict(data: data, fulfilledFragments: [])
     let movie = GetAllMoviesQuery.Data.Movie(_dataDict: dataDict)
     return MovieList(movies: [MovieViewModel(movie: movie)])
 }

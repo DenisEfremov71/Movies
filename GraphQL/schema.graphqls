@@ -11,8 +11,17 @@ type Movie {
   poster: String!
 }
 
+type Genre {
+  name: String!
+}
+
+input MovieFilter {
+  genre: String
+}
+
 type Query {
-  movies: [Movie]
+  movies(filter: MovieFilter): [Movie]
+  genres: [Genre]
 }
 
 enum CacheControlScope {

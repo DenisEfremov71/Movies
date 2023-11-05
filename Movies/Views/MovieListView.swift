@@ -15,12 +15,14 @@ struct MovieListView: View {
     var body: some View {
         VStack {
 
-            Picker("Select", selection: .constant("Foo")) {
-                Text("All")
-                Text("Fiction")
-                Text("Kids")
-                Text("Horror")
-            }.pickerStyle(SegmentedPickerStyle())
+            GenreSelection() { vm in
+                switch vm.name {
+                case "All":
+                    movieListVM.getAllMovies(genre: .null)
+                default:
+                    movieListVM.getAllMovies(genre: .some(vm.name))
+                }
+            }
 
             Spacer()
 
@@ -32,6 +34,13 @@ struct MovieListView: View {
 
             Spacer()
 
+            if !movieListVM.errors.isEmpty {
+                let errorMessage = movieListVM.errors.joined(separator: ";;; ")
+                Text(errorMessage)
+                    .lineLimit(3)
+                Spacer()
+            }
+
         }
         .sheet(isPresented: $isPresented, onDismiss: {
 
@@ -39,7 +48,7 @@ struct MovieListView: View {
             AddMovieView()
         })
         .onAppear(perform: {
-            movieListVM.getAllMovies()
+            movieListVM.getAllMovies(genre: .null)
         })
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()
