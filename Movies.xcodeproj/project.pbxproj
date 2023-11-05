@@ -8,17 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		7259832A2AF7D1820086FAA3 /* MoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983292AF7D1820086FAA3 /* MoviesApp.swift */; };
-		7259832C2AF7D1820086FAA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259832B2AF7D1820086FAA3 /* ContentView.swift */; };
+		7259832C2AF7D1820086FAA3 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259832B2AF7D1820086FAA3 /* MovieListView.swift */; };
 		7259832E2AF7D1830086FAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7259832D2AF7D1830086FAA3 /* Assets.xcassets */; };
 		725983312AF7D1830086FAA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 725983302AF7D1830086FAA3 /* Preview Assets.xcassets */; };
+		725983412AF7DD220086FAA3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983402AF7DD220086FAA3 /* Constants.swift */; };
+		725983432AF7DDDB0086FAA3 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983422AF7DDDB0086FAA3 /* ImageLoader.swift */; };
+		725983452AF7DE6E0086FAA3 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983442AF7DE6E0086FAA3 /* AddMovieView.swift */; };
+		725983472AF7DEB30086FAA3 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983462AF7DEB30086FAA3 /* View+Extensions.swift */; };
+		725983492AF7DF300086FAA3 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983482AF7DF300086FAA3 /* MovieList.swift */; };
+		7259834B2AF7DF3F0086FAA3 /* NoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259834A2AF7DF3F0086FAA3 /* NoResult.swift */; };
+		7259834D2AF7DF4D0086FAA3 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259834C2AF7DF4D0086FAA3 /* URLImage.swift */; };
+		7259834F2AF7DFD10086FAA3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259834E2AF7DFD10086FAA3 /* String+Extensions.swift */; };
+		725983522AF7E02F0086FAA3 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 725983512AF7E02F0086FAA3 /* Apollo */; };
+		725983542AF7E02F0086FAA3 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 725983532AF7E02F0086FAA3 /* ApolloAPI */; };
+		725983562AF7E02F0086FAA3 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 725983552AF7E02F0086FAA3 /* ApolloSQLite */; };
+		725983582AF7E02F0086FAA3 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 725983572AF7E02F0086FAA3 /* ApolloTestSupport */; };
+		7259835A2AF7E02F0086FAA3 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 725983592AF7E02F0086FAA3 /* ApolloWebSocket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		725983262AF7D1820086FAA3 /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		725983292AF7D1820086FAA3 /* MoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApp.swift; sourceTree = "<group>"; };
-		7259832B2AF7D1820086FAA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7259832B2AF7D1820086FAA3 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		7259832D2AF7D1830086FAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		725983302AF7D1830086FAA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		725983402AF7DD220086FAA3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		725983422AF7DDDB0086FAA3 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		725983442AF7DE6E0086FAA3 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
+		725983462AF7DEB30086FAA3 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		725983482AF7DF300086FAA3 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		7259834A2AF7DF3F0086FAA3 /* NoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResult.swift; sourceTree = "<group>"; };
+		7259834C2AF7DF4D0086FAA3 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		7259834E2AF7DFD10086FAA3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725983542AF7E02F0086FAA3 /* ApolloAPI in Frameworks */,
+				725983582AF7E02F0086FAA3 /* ApolloTestSupport in Frameworks */,
+				7259835A2AF7E02F0086FAA3 /* ApolloWebSocket in Frameworks */,
+				725983522AF7E02F0086FAA3 /* Apollo in Frameworks */,
+				725983562AF7E02F0086FAA3 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +77,15 @@
 		725983282AF7D1820086FAA3 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				725983292AF7D1820086FAA3 /* MoviesApp.swift */,
-				7259832B2AF7D1820086FAA3 /* ContentView.swift */,
+				725983372AF7D3340086FAA3 /* App */,
 				7259832D2AF7D1830086FAA3 /* Assets.xcassets */,
+				7259833C2AF7D4200086FAA3 /* Extensions */,
+				7259833A2AF7D3530086FAA3 /* Models */,
 				7259832F2AF7D1830086FAA3 /* Preview Content */,
+				7259833B2AF7D4180086FAA3 /* Services */,
+				7259833D2AF7D4330086FAA3 /* Utils */,
+				725983392AF7D34C0086FAA3 /* ViewModels */,
+				725983382AF7D33F0086FAA3 /* Views */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -65,6 +96,81 @@
 				725983302AF7D1830086FAA3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		725983372AF7D3340086FAA3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				725983292AF7D1820086FAA3 /* MoviesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		725983382AF7D33F0086FAA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7259833E2AF7D44A0086FAA3 /* Components */,
+				725983442AF7DE6E0086FAA3 /* AddMovieView.swift */,
+				7259832B2AF7D1820086FAA3 /* MovieListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		725983392AF7D34C0086FAA3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7259833A2AF7D3530086FAA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7259833B2AF7D4180086FAA3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7259833F2AF7D4550086FAA3 /* Loaders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7259833C2AF7D4200086FAA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				725983462AF7DEB30086FAA3 /* View+Extensions.swift */,
+				7259834E2AF7DFD10086FAA3 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7259833D2AF7D4330086FAA3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				725983402AF7DD220086FAA3 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7259833E2AF7D44A0086FAA3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				725983482AF7DF300086FAA3 /* MovieList.swift */,
+				7259834A2AF7DF3F0086FAA3 /* NoResult.swift */,
+				7259834C2AF7DF4D0086FAA3 /* URLImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7259833F2AF7D4550086FAA3 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				725983422AF7DDDB0086FAA3 /* ImageLoader.swift */,
+			);
+			path = Loaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +189,13 @@
 			dependencies = (
 			);
 			name = Movies;
+			packageProductDependencies = (
+				725983512AF7E02F0086FAA3 /* Apollo */,
+				725983532AF7E02F0086FAA3 /* ApolloAPI */,
+				725983552AF7E02F0086FAA3 /* ApolloSQLite */,
+				725983572AF7E02F0086FAA3 /* ApolloTestSupport */,
+				725983592AF7E02F0086FAA3 /* ApolloWebSocket */,
+			);
 			productName = Movies;
 			productReference = 725983262AF7D1820086FAA3 /* Movies.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 7259831D2AF7D1820086FAA3;
+			packageReferences = (
+				725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 725983272AF7D1820086FAA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7259832C2AF7D1820086FAA3 /* ContentView.swift in Sources */,
+				7259834F2AF7DFD10086FAA3 /* String+Extensions.swift in Sources */,
+				7259832C2AF7D1820086FAA3 /* MovieListView.swift in Sources */,
+				7259834D2AF7DF4D0086FAA3 /* URLImage.swift in Sources */,
 				7259832A2AF7D1820086FAA3 /* MoviesApp.swift in Sources */,
+				725983432AF7DDDB0086FAA3 /* ImageLoader.swift in Sources */,
+				725983412AF7DD220086FAA3 /* Constants.swift in Sources */,
+				725983472AF7DEB30086FAA3 /* View+Extensions.swift in Sources */,
+				7259834B2AF7DF3F0086FAA3 /* NoResult.swift in Sources */,
+				725983452AF7DE6E0086FAA3 /* AddMovieView.swift in Sources */,
+				725983492AF7DF300086FAA3 /* MovieList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +470,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		725983512AF7E02F0086FAA3 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		725983532AF7E02F0086FAA3 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		725983552AF7E02F0086FAA3 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		725983572AF7E02F0086FAA3 /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+		725983592AF7E02F0086FAA3 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 725983502AF7E02F0086FAA3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7259831E2AF7D1820086FAA3 /* Project object */;
 }
