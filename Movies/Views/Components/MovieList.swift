@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import MoviesAPI
 
 struct MovieList: View {
+
+    let movies: [MovieViewModel]
     var onDeleteMovie: ((String) -> Void)?
 
     private func deleteMovie(at indexSet: IndexSet) {
@@ -16,20 +19,20 @@ struct MovieList: View {
 
     var body: some View {
         List {
-            ForEach(1...20, id: \.self) { index in
+            ForEach(movies) { movie in
                 HStack {
-                    URLImage(url: "\(index)")
+                    URLImage(url: "\(movie.poster)")
                         .frame(width: 100, height: 150)
                         .clipShape(RoundedRectangle(cornerRadius: 16.0, style: .continuous))
                     VStack(alignment: .leading) {
-                        Text("Movie Name \(index)")
+                        Text(movie.title)
                             .padding(.top, 10)
                             .font(.headline)
-                        Text("Movie Year \(index)")
+                        Text(movie.year)
                             .font(.caption)
 
                         HStack {
-                            Text("Movie Genre \(index)")
+                            Text(movie.genre)
                                 .font(.caption)
                                 .foregroundColor(.black)
                                 .padding(8)
@@ -50,5 +53,15 @@ struct MovieList: View {
 }
 
 #Preview {
-    MovieList()
+    let data: [String: AnyHashable] = [
+        "id": "1",
+        "title": "Batman: The Killing Joke",
+        "year": "2016",
+        "genre": "Fiction",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    ]
+    let objId: Set<ObjectIdentifier> = []
+    let dataDict = DataDict(data: data, fulfilledFragments: objId)
+    let movie = GetAllMoviesQuery.Data.Movie(_dataDict: dataDict)
+    return MovieList(movies: [MovieViewModel(movie: movie)])
 }

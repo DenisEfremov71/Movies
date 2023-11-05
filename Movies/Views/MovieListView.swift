@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MovieListView: View {
+
+    @StateObject private var movieListVM = MovieListViewModel()
     @State private var isPresented: Bool = false
 
     var body: some View {
@@ -22,21 +24,22 @@ struct MovieListView: View {
 
             Spacer()
 
-            // Show List of Movies
-            List(1...20, id: \.self) { index in
-                Text("Movie Name \(index)")
+            if !movieListVM.movies.isEmpty {
+                MovieList(movies: movieListVM.movies)
+            } else {
+                NoResult(message: "No movies found")
             }
 
             Spacer()
 
         }
         .sheet(isPresented: $isPresented, onDismiss: {
-            
+
         }, content: {
             AddMovieView()
         })
         .onAppear(perform: {
-
+            movieListVM.getAllMovies()
         })
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()
