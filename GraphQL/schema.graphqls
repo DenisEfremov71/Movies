@@ -3,8 +3,16 @@ directive @cacheControl(
   scope: CacheControlScope
 ) on FIELD_DEFINITION | OBJECT | INTERFACE
 
+type Movie {
+  id: ID!
+  title: String!
+  year: String!
+  genre: String!
+  poster: String!
+}
+
 type Query {
-  hello: String
+  movies: [Movie]
 }
 
 enum CacheControlScope {

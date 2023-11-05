@@ -23,6 +23,7 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
   public static func objectType(forTypename typename: String) -> ApolloAPI.Object? {
     switch typename {
     case "Query": return MoviesAPI.Objects.Query
+    case "Movie": return MoviesAPI.Objects.Movie
     default: return nil
     }
   }

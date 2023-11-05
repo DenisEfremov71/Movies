@@ -41,8 +41,8 @@
 		7259834A2AF7DF3F0086FAA3 /* NoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResult.swift; sourceTree = "<group>"; };
 		7259834C2AF7DF4D0086FAA3 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		7259834E2AF7DFD10086FAA3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		7259835D2AF7E7AD0086FAA3 /* HelloWorld.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = HelloWorld.graphql; sourceTree = "<group>"; };
 		7259835E2AF7E9AB0086FAA3 /* schema.graphqls */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		725983622AF7F9100086FAA3 /* GetAllMovies.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetAllMovies.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				7259835E2AF7E9AB0086FAA3 /* schema.graphqls */,
-				7259835D2AF7E7AD0086FAA3 /* HelloWorld.graphql */,
+				725983622AF7F9100086FAA3 /* GetAllMovies.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
