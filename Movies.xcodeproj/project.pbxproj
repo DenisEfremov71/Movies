@@ -25,6 +25,8 @@
 		725983582AF7E02F0086FAA3 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 725983572AF7E02F0086FAA3 /* ApolloTestSupport */; };
 		7259835A2AF7E02F0086FAA3 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 725983592AF7E02F0086FAA3 /* ApolloWebSocket */; };
 		725983612AF7E9D40086FAA3 /* MoviesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 725983602AF7E9D40086FAA3 /* MoviesAPI */; };
+		725983642AF8119F0086FAA3 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983632AF8119F0086FAA3 /* MovieListViewModel.swift */; };
+		725983662AF8141A0086FAA3 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983652AF8141A0086FAA3 /* Apollo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		7259834E2AF7DFD10086FAA3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		7259835E2AF7E9AB0086FAA3 /* schema.graphqls */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
 		725983622AF7F9100086FAA3 /* GetAllMovies.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetAllMovies.graphql; sourceTree = "<group>"; };
+		725983632AF8119F0086FAA3 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		725983652AF8141A0086FAA3 /* Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		725983392AF7D34C0086FAA3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				725983632AF8119F0086FAA3 /* MovieListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7259833F2AF7D4550086FAA3 /* Loaders */,
+				725983652AF8141A0086FAA3 /* Apollo.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -276,8 +282,10 @@
 				725983432AF7DDDB0086FAA3 /* ImageLoader.swift in Sources */,
 				725983412AF7DD220086FAA3 /* Constants.swift in Sources */,
 				725983472AF7DEB30086FAA3 /* View+Extensions.swift in Sources */,
+				725983642AF8119F0086FAA3 /* MovieListViewModel.swift in Sources */,
 				7259834B2AF7DF3F0086FAA3 /* NoResult.swift in Sources */,
 				725983452AF7DE6E0086FAA3 /* AddMovieView.swift in Sources */,
+				725983662AF8141A0086FAA3 /* Apollo.swift in Sources */,
 				725983492AF7DF300086FAA3 /* MovieList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
