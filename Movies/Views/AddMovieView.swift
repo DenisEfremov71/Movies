@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct AddMovieView: View {
+    
     @Environment(\.presentationMode) private var presentationMode
+    @StateObject private var addMovieVM = AddMovieViewModel()
 
     var body: some View {
         Form {
 
-            Text("TextField For the Name")
-            Text("TextField For the Year")
-            Text("Picker For the Genre Selection")
+            TextField("Title", text: $addMovieVM.title) {
+                // perform a call to omdbapi REST API to get the posters
+            }
+            TextField("Year", text: $addMovieVM.year)
+
+            GenreSelection(onSelected: { vm in
+                //
+            }, ignoreGenres: ["All"])
 
 
             Text("Show Movie Posters in Grid")

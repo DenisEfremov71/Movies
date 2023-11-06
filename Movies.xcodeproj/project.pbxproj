@@ -29,6 +29,7 @@
 		725983662AF8141A0086FAA3 /* Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983652AF8141A0086FAA3 /* Apollo.swift */; };
 		725983692AF839680086FAA3 /* GenreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983682AF839680086FAA3 /* GenreListViewModel.swift */; };
 		7259836B2AF844C30086FAA3 /* GenreSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259836A2AF844C30086FAA3 /* GenreSelection.swift */; };
+		7259836E2AF869180086FAA3 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259836D2AF869180086FAA3 /* AddMovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		725983682AF839680086FAA3 /* GenreListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListViewModel.swift; sourceTree = "<group>"; };
 		7259836A2AF844C30086FAA3 /* GenreSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelection.swift; sourceTree = "<group>"; };
 		7259836C2AF866E90086FAA3 /* AddMovie.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AddMovie.graphql; sourceTree = "<group>"; };
+		7259836D2AF869180086FAA3 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				725983632AF8119F0086FAA3 /* MovieListViewModel.swift */,
 				725983682AF839680086FAA3 /* GenreListViewModel.swift */,
+				7259836D2AF869180086FAA3 /* AddMovieViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				725983692AF839680086FAA3 /* GenreListViewModel.swift in Sources */,
+				7259836E2AF869180086FAA3 /* AddMovieViewModel.swift in Sources */,
 				7259834F2AF7DFD10086FAA3 /* String+Extensions.swift in Sources */,
 				7259832C2AF7D1820086FAA3 /* MovieListView.swift in Sources */,
 				7259834D2AF7DF4D0086FAA3 /* URLImage.swift in Sources */,
