@@ -46,6 +46,24 @@ class MovieListViewModel: ObservableObject {
                 }
             }
         }
+    }
+
+    func deleteMovie(movieId: String) {
+
+        Network.shared.apollo.perform(mutation: DeleteMovieMutation(movieId: movieId)) { [weak self] result in
+            guard let self = self else {
+                return
+            }
+
+            switch result {
+            case .success(_):
+                self.getAllMovies(genre: .null)
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.errors.append(error.localizedDescription)
+                }
+            }
+        }
 
     }
 

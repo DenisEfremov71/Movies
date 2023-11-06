@@ -14,7 +14,12 @@ struct MovieList: View {
     var onDeleteMovie: ((String) -> Void)?
 
     private func deleteMovie(at indexSet: IndexSet) {
-
+        indexSet.forEach { index in
+            let movie = movies[index]
+            if let onDeleteMovie = onDeleteMovie {
+                onDeleteMovie(movie.id)
+            }
+        }
     }
 
     var body: some View {

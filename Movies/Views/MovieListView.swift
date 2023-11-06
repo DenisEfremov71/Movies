@@ -27,7 +27,9 @@ struct MovieListView: View {
             Spacer()
 
             if !movieListVM.movies.isEmpty {
-                MovieList(movies: movieListVM.movies)
+                MovieList(movies: movieListVM.movies) { movieId in
+                    movieListVM.deleteMovie(movieId: movieId)
+                }
             } else {
                 NoResult(message: "No movies found")
             }
