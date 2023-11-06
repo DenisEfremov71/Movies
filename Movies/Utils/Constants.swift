@@ -16,7 +16,7 @@ struct Constants {
     struct Urls {
 
         static func urlByMovieName(name: String) -> URL? {
-            return URL(string: "http://www.omdbapi.com/?s=\(name)&page=2&apikey=\(Keys.apiKey)")
+            URL(string: "http://www.omdbapi.com/?s=\(name)&page=2&apikey=\(Keys.apiKey)")
         }
     }
 }

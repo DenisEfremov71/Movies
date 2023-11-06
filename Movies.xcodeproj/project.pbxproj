@@ -30,6 +30,10 @@
 		725983692AF839680086FAA3 /* GenreListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983682AF839680086FAA3 /* GenreListViewModel.swift */; };
 		7259836B2AF844C30086FAA3 /* GenreSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259836A2AF844C30086FAA3 /* GenreSelection.swift */; };
 		7259836E2AF869180086FAA3 /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259836D2AF869180086FAA3 /* AddMovieViewModel.swift */; };
+		725983702AF9264A0086FAA3 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7259836F2AF9264A0086FAA3 /* WebService.swift */; };
+		725983722AF926F00086FAA3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983712AF926F00086FAA3 /* Movie.swift */; };
+		725983752AF960DE0086FAA3 /* PosterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983742AF960DE0086FAA3 /* PosterViewModel.swift */; };
+		725983772AF965DD0086FAA3 /* MoviePosterGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725983762AF965DD0086FAA3 /* MoviePosterGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,11 @@
 		7259836A2AF844C30086FAA3 /* GenreSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelection.swift; sourceTree = "<group>"; };
 		7259836C2AF866E90086FAA3 /* AddMovie.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AddMovie.graphql; sourceTree = "<group>"; };
 		7259836D2AF869180086FAA3 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
+		7259836F2AF9264A0086FAA3 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		725983712AF926F00086FAA3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		725983732AF92E910086FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		725983742AF960DE0086FAA3 /* PosterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewModel.swift; sourceTree = "<group>"; };
+		725983762AF965DD0086FAA3 /* MoviePosterGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,7 @@
 		725983282AF7D1820086FAA3 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				725983732AF92E910086FAA3 /* Info.plist */,
 				725983372AF7D3340086FAA3 /* App */,
 				7259832D2AF7D1830086FAA3 /* Assets.xcassets */,
 				7259833C2AF7D4200086FAA3 /* Extensions */,
@@ -139,6 +149,7 @@
 				725983632AF8119F0086FAA3 /* MovieListViewModel.swift */,
 				725983682AF839680086FAA3 /* GenreListViewModel.swift */,
 				7259836D2AF869180086FAA3 /* AddMovieViewModel.swift */,
+				725983742AF960DE0086FAA3 /* PosterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 		7259833A2AF7D3530086FAA3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				725983712AF926F00086FAA3 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +167,7 @@
 			children = (
 				7259833F2AF7D4550086FAA3 /* Loaders */,
 				725983652AF8141A0086FAA3 /* Apollo.swift */,
+				7259836F2AF9264A0086FAA3 /* WebService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 				7259834A2AF7DF3F0086FAA3 /* NoResult.swift */,
 				7259834C2AF7DF4D0086FAA3 /* URLImage.swift */,
 				7259836A2AF844C30086FAA3 /* GenreSelection.swift */,
+				725983762AF965DD0086FAA3 /* MoviePosterGrid.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -297,12 +311,16 @@
 				725983432AF7DDDB0086FAA3 /* ImageLoader.swift in Sources */,
 				725983412AF7DD220086FAA3 /* Constants.swift in Sources */,
 				725983472AF7DEB30086FAA3 /* View+Extensions.swift in Sources */,
+				725983752AF960DE0086FAA3 /* PosterViewModel.swift in Sources */,
 				725983642AF8119F0086FAA3 /* MovieListViewModel.swift in Sources */,
+				725983702AF9264A0086FAA3 /* WebService.swift in Sources */,
 				7259834B2AF7DF3F0086FAA3 /* NoResult.swift in Sources */,
+				725983772AF965DD0086FAA3 /* MoviePosterGrid.swift in Sources */,
 				725983452AF7DE6E0086FAA3 /* AddMovieView.swift in Sources */,
 				725983662AF8141A0086FAA3 /* Apollo.swift in Sources */,
 				7259836B2AF844C30086FAA3 /* GenreSelection.swift in Sources */,
 				725983492AF7DF300086FAA3 /* MovieList.swift in Sources */,
+				725983722AF926F00086FAA3 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +457,7 @@
 				DEVELOPMENT_TEAM = WY9AX8R5R2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +488,7 @@
 				DEVELOPMENT_TEAM = WY9AX8R5R2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

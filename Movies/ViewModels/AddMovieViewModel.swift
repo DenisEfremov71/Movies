@@ -5,13 +5,14 @@
 //  Created by Denis Efremov on 2023-11-05.
 //
 
-import Foundation
+import SwiftUI
 import MoviesAPI
 
 class AddMovieViewModel: ObservableObject {
     
     @Published var errors: [String] = []
     @Published var poster: String = ""
+    @Published var posters: [PosterViewModel] = []
     var title: String = ""
     var year: String = ""
     var genre: String = ""
@@ -38,6 +39,27 @@ class AddMovieViewModel: ObservableObject {
                 }
             }
         }
+    }
+
+    func fetchPostersByMovieName(name: String) {
+
+        WebService().getMoviesBy(name: name) { [weak self] result in
+            guard let self = self else {
+                return
+            }
+
+            switch result {
+            case .success(let movies):
+                DispatchQueue.main.async {
+                    self.posters = movies.map(PosterViewModel.init)
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.errors.append(error.localizedDescription)
+                }
+            }
+        }
+
     }
 
 }

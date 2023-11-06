@@ -16,7 +16,7 @@ struct AddMovieView: View {
         Form {
 
             TextField("Title", text: $addMovieVM.title) {
-                // perform a call to omdbapi REST API to get the posters
+                addMovieVM.fetchPostersByMovieName(name: addMovieVM.title.encoded())
             }
             TextField("Year", text: $addMovieVM.year)
 
@@ -25,7 +25,7 @@ struct AddMovieView: View {
             }, ignoreGenres: ["All"])
 
 
-            Text("Show Movie Posters in Grid")
+            MoviePosterGrid(posters: addMovieVM.posters, selectedPoster: $addMovieVM.poster)
 
         }
         .navigationTitle("Add New Movie")
