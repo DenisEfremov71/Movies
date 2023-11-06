@@ -19,9 +19,21 @@ input MovieFilter {
   genre: String
 }
 
+input MovieInput {
+  id: ID
+  title: String!
+  year: String!
+  genre: String!
+  poster: String!
+}
+
 type Query {
   movies(filter: MovieFilter): [Movie]
   genres: [Genre]
+}
+
+type Mutation {
+  addMovie(movie: MovieInput): Movie
 }
 
 enum CacheControlScope {
