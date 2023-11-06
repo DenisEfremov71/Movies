@@ -64,6 +64,7 @@
 		725983732AF92E910086FAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		725983742AF960DE0086FAA3 /* PosterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewModel.swift; sourceTree = "<group>"; };
 		725983762AF965DD0086FAA3 /* MoviePosterGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterGrid.swift; sourceTree = "<group>"; };
+		725983782AF9855F0086FAA3 /* DeleteMovie.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = DeleteMovie.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +217,7 @@
 				7259836C2AF866E90086FAA3 /* AddMovie.graphql */,
 				725983622AF7F9100086FAA3 /* GetAllMovies.graphql */,
 				725983672AF838270086FAA3 /* GetAllGenres.graphql */,
+				725983782AF9855F0086FAA3 /* DeleteMovie.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";

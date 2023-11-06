@@ -34,6 +34,7 @@ type Query {
 
 type Mutation {
   addMovie(movie: MovieInput): Movie
+  deleteMovie(id: ID!): Movie
 }
 
 enum CacheControlScope {

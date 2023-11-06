@@ -43,7 +43,7 @@ struct MovieListView: View {
 
         }
         .sheet(isPresented: $isPresented, onDismiss: {
-
+            movieListVM.getAllMovies(genre: .null)
         }, content: {
             AddMovieView()
         })

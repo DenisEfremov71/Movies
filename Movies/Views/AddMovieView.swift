@@ -9,8 +9,18 @@ import SwiftUI
 
 struct AddMovieView: View {
     
-    @Environment(\.presentationMode) private var presentationMode
+    @Environment(\.dismiss) private var dismiss
     @StateObject private var addMovieVM = AddMovieViewModel()
+
+    var isFormValid: Bool {
+        guard !addMovieVM.title.isEmpty && !addMovieVM.year.isEmpty && !addMovieVM.genre.isEmpty && !addMovieVM.poster.isEmpty else {
+            return false
+        }
+        guard let _ = URL(string: addMovieVM.poster) else {
+            return false
+        }
+        return true
+    }
 
     var body: some View {
         Form {
@@ -21,7 +31,7 @@ struct AddMovieView: View {
             TextField("Year", text: $addMovieVM.year)
 
             GenreSelection(onSelected: { vm in
-                //
+                addMovieVM.genre = vm.name
             }, ignoreGenres: ["All"])
 
 
@@ -29,8 +39,13 @@ struct AddMovieView: View {
 
         }
         .navigationTitle("Add New Movie")
-        .navigationBarItems(trailing: Button("Save") {
-        })
+        .navigationBarItems(
+            trailing: Button("Save") {
+                addMovieVM.addMovie {
+                    dismiss()
+                }
+            }.disabled(!isFormValid)
+        )
         .embedInNavigationView()
     }
 }

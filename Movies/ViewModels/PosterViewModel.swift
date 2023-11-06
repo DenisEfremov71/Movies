@@ -16,6 +16,10 @@ struct PosterViewModel: Identifiable {
         movie.title
     }
 
+    var year: String {
+        movie.year
+    }
+
     var poster: String {
         movie.poster
     }

@@ -1,0 +1,9 @@
+mutation DeleteMovie($movieId: ID!) {
+  deleteMovie(id: $movieId) {
+    id
+    title
+    year
+    genre
+    poster
+  }
+}
